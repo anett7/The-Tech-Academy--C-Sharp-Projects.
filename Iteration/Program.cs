@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Web;
 
 class Program
@@ -66,8 +67,8 @@ class Program
         //Console.ReadLine();
 
 
-        //Console app assignment part 1 
-        //create a one-dimensional Array of Strings
+       // Console app assignment part 1
+        //create a one - dimensional Array of Strings
 
         string[] sentence_start = { "My favorite color is: ", "I love eating: ", "My best friend is:" };
         //ask user to input some text:
@@ -80,14 +81,27 @@ class Program
         responses.Add(Console.ReadLine());
 
         //create a loop that goes through each string in the array, adding user's text to string and print this on separate lines.
-        for ( int j = 0; j < sentence_start.Length; j-- )
+        for (; ; )//(int j = 0; j < sentence_start.Length; j++)
         {
-           
-            Console.WriteLine(sentence_start[j]+ responses[j]);
-         }
+
+            Console.WriteLine(sentence_start[j] + responses[j]);
+        }
         Console.ReadLine();
-        
-       
+
+        //Part 3
+        //add a loop where the comparison that is used to determine whether to continue iterating
+        // is a <+ opearator.
+
+        //StringBuilder ahh = new StringBuilder();
+        //ahh.Append("A");
+        //while (ahh.Length <=10)
+        //    {
+        //    ahh.Append("h");
+        //            }
+        //ahh.Append("!");
+        //Console.WriteLine(ahh);
+        //Console.ReadLine();
+
     }
 }
 

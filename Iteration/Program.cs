@@ -52,19 +52,42 @@ class Program
         //}
         //Console.ReadLine();
 
-        List<int> testScores = new List<int>() { 98, 23, 99, 12, 74, 23, 99 };
-        List<int> passingScores = new List<int>();
+        //List<int> testScores = new List<int>() { 98, 23, 99, 12, 74, 23, 99 };
+        //List<int> passingScores = new List<int>();
 
-        foreach (int score in testScores)
+        //foreach (int score in testScores)
+        //{
+        //    if (score>85)
+        //    {
+        //        passingScores.Add(score);
+        //    }
+        //}
+        //Console.WriteLine(passingScores.Count);
+        //Console.ReadLine();
+
+
+        //Console app assignment part 1 
+        //create a one-dimensional Array of Strings
+
+        string[] sentence_start = { "My favorite color is: ", "I love eating: ", "My best friend is:" };
+        //ask user to input some text:
+        List<string> responses = new List<string>();
+        Console.WriteLine("Please enter your favorite color");
+        responses.Add(Console.ReadLine());
+        Console.WriteLine("Please enter a food you like");
+        responses.Add(Console.ReadLine());
+        Console.WriteLine("Please enter a friend's name that comes first in your mind");
+        responses.Add(Console.ReadLine());
+
+        //create a loop that goes through each string in the array, adding user's text to string and print this on separate lines.
+        for ( int j = 0; j < sentence_start.Length; j-- )
         {
-            if (score>85)
-            {
-                passingScores.Add(score);
-            }
-        }
-        Console.WriteLine(passingScores.Count);
+           
+            Console.WriteLine(sentence_start[j]+ responses[j]);
+         }
         Console.ReadLine();
-
+        
+       
     }
-    }
+}
 

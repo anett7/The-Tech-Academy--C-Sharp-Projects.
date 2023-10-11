@@ -142,31 +142,31 @@ class Program
         //}
         //Console.ReadLine();
 
-        ////Part 4 create a list of strings where each item in the list is unique
-        //List<string> students = new List<string> { "Kiss", "Stein", "Nagy", "Kovacs", "Soos" };
-        ////ask the user to input text to search for in the list.
-        //Console.WriteLine("Enter student's name");
+        //Part 4 create a list of strings where each item in the list is unique
+        List<string> students = new List<string> { "Kiss", "Stein", "Nagy", "Kovacs", "Soos" };
+        //ask the user to input text to search for in the list.
+        Console.WriteLine("Enter student's name");
+        int index = 0;
+        string studentinput = Console.ReadLine();
+        for (int i = 0; i < students.Count; i++)
+        {
+            if (studentinput == students[i])
+            {
+                Console.WriteLine("that is a valid student name, it was found at index" + i);
+            }
 
-        //string studentinput = Console.ReadLine();
-        //for (int i = 0; i < students.Count; i++)
-        //{
-        //    if (studentinput == students[i])
-        //    {
-        //        Console.WriteLine("that is a valid student name, it was found at index" + i);
-        //    }
+            else
+            {
+                index++;
+            }
+        }
+        if (index == students.Count)
+        {
 
-        //    else
-        //     {
-        //      index++;
-        //     }
-        //}
-        //if (index == students.Count)
-        //{
+            Console.WriteLine("that is not a valid student name, please write a valid student name!");
 
-        //    Console.WriteLine("that is not a valid student name, please write a valid student name!");
-
-        //}
-        //Console.ReadLine();
+        }
+        Console.ReadLine();
 
 
 
@@ -198,27 +198,27 @@ class Program
         ////end of part5
         ///
 
-        //Part 6
-        //list of strings that has two identical strings in the list. 
-        List<string> students = new List<string> { "Mary", "Ann", "Anita", "Anna", "Anita" };
-        List<string> repeatCheck = new List<string>();
-        Console.WriteLine("Class Roster:");
-        //Create foreach loop to evaluate each item in the list display a message showing the string and whether or not it has already appeared
+        ////Part 6
+        ////list of strings that has two identical strings in the list. 
+        //List<string> students = new List<string> { "Mary", "Ann", "Anita", "Anna", "Anita" };
+        //List<string> repeatCheck  = new List<string>();
+        //Console.WriteLine("Class Roster:");
+        ////Create foreach loop to evaluate each item in the list display a message showing the string and whether or not it has already appeared
 
-        foreach (string name in students)
-        {
-            Console.WriteLine(name);
-            if (repeatCheck.Contains(name))
-            {
-                Console.WriteLine("this name has been repeated, use last name initial");
-            }
-            else
-            {
-                Console.WriteLine("This name has not been repeated");
-            }
-            repeatCheck.Add(name);
-        }
-        Console.ReadLine();
+        //foreach (string name in students)
+        //{
+        //    Console.WriteLine(name);
+        //    if (repeatCheck.Contains(name))
+        //    {
+        //        Console.WriteLine("this name has been repeated, use last name initial");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("This name has not been repeated");
+        //    }
+        //    repeatCheck.Add(name);
+        //}
+        //Console.ReadLine();
         
     }
    

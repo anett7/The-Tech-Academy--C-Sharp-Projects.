@@ -156,10 +156,10 @@ class Program
           
             else
              {
-              i++;
+              index++;
              }
         }
-        if (i == students.Count)
+        if (index == students.Count)
         {
 
             Console.WriteLine("that is not a valid student name, please write a valid student name!");

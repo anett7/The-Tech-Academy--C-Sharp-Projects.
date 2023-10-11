@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Dynamic;
 using System.Text;
 using System.Web;
 
@@ -141,34 +142,86 @@ class Program
         //}
         //Console.ReadLine();
 
-        //Part 4 create a list of strings where each item in the list is unique
-        List<string> students = new List<string> { "Kiss", "Stein", "Nagy", "Kovacs", "Soos" };
-        //ask the user to input text to search for in the list.
-        Console.WriteLine("Enter student's name");
+        ////Part 4 create a list of strings where each item in the list is unique
+        //List<string> students = new List<string> { "Kiss", "Stein", "Nagy", "Kovacs", "Soos" };
+        ////ask the user to input text to search for in the list.
+        //Console.WriteLine("Enter student's name");
 
-        string studentinput = Console.ReadLine();
-        for (int i = 0; i < students.Count; i++)
+        //string studentinput = Console.ReadLine();
+        //for (int i = 0; i < students.Count; i++)
+        //{
+        //    if (studentinput == students[i])
+        //    {
+        //        Console.WriteLine("that is a valid student name, it was found at index" + i);
+        //    }
+
+        //    else
+        //     {
+        //      index++;
+        //     }
+        //}
+        //if (index == students.Count)
+        //{
+
+        //    Console.WriteLine("that is not a valid student name, please write a valid student name!");
+
+        //}
+        //Console.ReadLine();
+
+
+
+        //////part 5. 
+        ////Create a list of strings that has at least two identical strings in the list.
+        //List<string> tables = new List<string> { "Reserved", "Vacant", "Taken", "Taken", "Vacant", "Reserved" };
+        //Console.WriteLine("Welcome to OUR Caffe check in.\nIf you have a reservation, type \"Reserved\".\nIf you join a party, type\"Taken\". \nOtherwise type\"Vacant\".");
+
+        ////ask user to select text
+        //Console.WriteLine("Enter selection:");
+        //    string selection = Console.ReadLine();
+        ////add code that tells user if input is not on the list
+        //while (!(selection== "Vacant" || selection== "Reserved" || selection=="Taken"))
+        //{
+        //    Console.WriteLine("Please enter one of 3 choices:");
+        //    selection = Console.ReadLine();
+        //}
+        //Console.WriteLine("Our tables are numbered, that matches your selection:");
+        ////create loop that iterates through the loop and displays indices of the array that contain matching text on the screen.
+
+        //for (int i3 =0; i3< tables.Count; i3++)
+        //{
+        //    if (selection == tables[i3])
+        //    {
+        //        Console.WriteLine(i3);
+        //    }
+        //}
+        //Console.ReadLine();
+        ////end of part5
+        ///
+
+        //Part 6
+        //list of strings that has two identical strings in the list. 
+        List<string> students = new List<string> { "Mary", "Ann", "Anita", "Anna", "Anita" };
+        List<string> repeatCheck = new List<string>();
+        Console.WriteLine("Class Roster:");
+        //Create foreach loop to evaluate each item in the list display a message showing the string and whether or not it has already appeared
+
+        foreach (string name in students)
         {
-            if (studentinput == students[i])
+            Console.WriteLine(name);
+            if (repeatCheck.Contains(name))
             {
-                Console.WriteLine("that is a valid student name, it was found at index" + i);
+                Console.WriteLine("this name has been repeated, use last name initial");
             }
-          
             else
-             {
-              index++;
-             }
-        }
-        if (index == students.Count)
-        {
-
-            Console.WriteLine("that is not a valid student name, please write a valid student name!");
-
+            {
+                Console.WriteLine("This name has not been repeated");
+            }
+            repeatCheck.Add(name);
         }
         Console.ReadLine();
         
-        
     }
+   
 
 
 }

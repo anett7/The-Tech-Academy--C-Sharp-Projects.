@@ -41,8 +41,12 @@ internal class Program
             listIntegers.Add(8);
             listIntegers.Add(6);
             listIntegers.Add(2);
-            
-            Console.WriteLine("Pick a number to divide each number in the list.");
+            Console.WriteLine("Here is a list of numbers:");
+            foreach(int integer in listIntegers)
+            {
+                Console.WriteLine(integer);
+            }
+            Console.WriteLine("Pick any number you like to divide each number with from the above list.");
             int numberSelected = Convert.ToInt32(Console.ReadLine());
             int index = 0;
 
@@ -50,7 +54,7 @@ internal class Program
             {
             
                 int result = element / numberSelected;
-                Console.WriteLine( index + " number divided by" + numberSelected + "equals" + result);
+                Console.WriteLine("The number " + listIntegers[index] + " divided by " + numberSelected + " equals " + result);
                 index++;
             }
 

@@ -24,6 +24,7 @@ namespace TwentyOne
 
             //print out count to see it is 52:
             Console.WriteLine(deck.Cards.Count);
+            Console.ReadLine();
 
             //to fill up deck one by one START would be like this:
 
@@ -48,6 +49,7 @@ namespace TwentyOne
             {
                 int randomIndex = random.Next( 0, deck.Cards.Count);
                     TempList.Add(deck.Cards[randomIndex]);
+                deck.Cards.RemoveAt(randomIndex);
             }
                 deck.Cards = TempList;
                 return deck;

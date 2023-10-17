@@ -19,7 +19,7 @@ namespace TwentyOne
             //this is not the best solution to add one by one. 
 
             //nested foreach loop:
-            //create two list and instanciate them with values Each of these items in the faces list
+            //create two list and instantiate them with values Each of these items in the faces list
             //we loop through 4 times. During each loop we create a card and assign the suit and face value
             //then we add that new card we created in the our cards List.
             List<string>Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades"};

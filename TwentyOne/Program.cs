@@ -12,7 +12,8 @@ namespace TwentyOne
         {
 
             Deck deck = new Deck();
-            //upon instanciating that object, it should have an entire deck of 52cards
+            deck = Shuffle(deck);
+            //upon instantiating that object, it should have an entire deck of 52cards
             //deck object which has a property cards, that cards list should have 52 cards in it
             //to print it, we create an other foreach loop
             foreach (Card card in deck.Cards)
@@ -38,6 +39,18 @@ namespace TwentyOne
 
             //Console.WriteLine(cardOne.Face + " of " + cardOne.Suit);
             Console.ReadLine();
+        }
+        public static Deck Shuffle(Deck deck)
+        { 
+            List<Card> TempList = new List<Card>();
+            Random random = new Random();
+            while (deck.Cards.Count > 0)
+            {
+                int randomIndex = random.Next( 0, deck.Cards.Count);
+                    TempList.Add(deck.Cards[randomIndex]);
+            }
+                deck.Cards = TempList;
+                return deck;
         }
     }
 }

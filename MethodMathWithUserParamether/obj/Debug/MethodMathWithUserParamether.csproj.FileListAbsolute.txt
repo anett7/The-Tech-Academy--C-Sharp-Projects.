@@ -1,0 +1,7 @@
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\bin\Debug\MethodMathWithUserParamether.exe.config
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\bin\Debug\MethodMathWithUserParamether.exe
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\bin\Debug\MethodMathWithUserParamether.pdb
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\obj\Debug\MethodMathWithUserParamether.csproj.AssemblyReference.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\obj\Debug\MethodMathWithUserParamether.csproj.CoreCompileInputs.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\obj\Debug\MethodMathWithUserParamether.exe
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\MethodMathWithUserParamether\obj\Debug\MethodMathWithUserParamether.pdb

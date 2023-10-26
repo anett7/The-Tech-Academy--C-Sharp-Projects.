@@ -33,7 +33,7 @@ namespace MethodMathWithUserParamether
                 {
                     //call method with one parameter 
 
-                    Console.WriteLine(" to multiply your number with default number 1 is: " + math1.Math2Int(number1));
+                    Console.WriteLine(" to multiply your number with default number 2 is: " + math1.Math2Int(number1));
                     Console.ReadLine();
                 }
                 counter++;

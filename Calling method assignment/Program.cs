@@ -15,11 +15,15 @@ namespace Calling_method_assignment
             int defense = Convert.ToInt32(Console.ReadLine());
             int enemy_damage = MathMethods.Defense(defense);
             Console.WriteLine("You have taken " + enemy_damage + " HP of damage. ");
+
+
             Console.WriteLine("Your healer, Serra is near by. She heals you with her starff");
             Console.WriteLine("Input your healer's magic stat:");
             int magic = Convert.ToInt32(Console.ReadLine());
             int hitpoints = MathMethods.Heal(magic);
             Console.WriteLine("You have been healed for " + hitpoints + " HP.");
+
+
             Console.WriteLine("Now it is your turn to counter attack.");
             Console.WriteLine("Input your strength stat:");
             int strength = Convert.ToInt32(Console.ReadLine());

@@ -24,14 +24,16 @@ namespace ClassMethodAssignment
             //create a method with output parameters
             Console.WriteLine("Input a phrase!");
             string input= Console.ReadLine();
-            string phrase = MathDev.StringCounter(input, out int count);
-            Console.WriteLine(phrase);
+            //string phrase = MathDev.StringCounter(input, out int count);
+            //Console.WriteLine(phrase);
+            Console.WriteLine(MathDev.StringCounter(input, out int count));
 
-            //// call overload method
-            //Console.WriteLine("Input another phrase!");
-            //string input2 = Console.ReadLine();
+            // call overload method
+            Console.WriteLine("Input another phrase!");
+            string input2 = Console.ReadLine();
             //int count = MathDev.StringCounter(string input);
-            //Console.WriteLine(phrase2);
+            //Console.WriteLine(count);
+            Console.WriteLine(MathDev.StringCounter(string input));
 
             //call method of static class
             StaticClass.StaticMethod();

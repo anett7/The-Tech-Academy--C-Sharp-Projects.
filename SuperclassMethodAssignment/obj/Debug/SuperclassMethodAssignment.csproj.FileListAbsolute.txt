@@ -1,0 +1,7 @@
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\bin\Debug\SuperclassMethodAssignment.exe.config
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\bin\Debug\SuperclassMethodAssignment.exe
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\bin\Debug\SuperclassMethodAssignment.pdb
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\obj\Debug\SuperclassMethodAssignment.csproj.AssemblyReference.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\obj\Debug\SuperclassMethodAssignment.csproj.CoreCompileInputs.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\obj\Debug\SuperclassMethodAssignment.exe
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\SuperclassMethodAssignment\obj\Debug\SuperclassMethodAssignment.pdb

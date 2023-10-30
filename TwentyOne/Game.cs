@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    internal class Game
+    public class Game
     {
         //all games have a list of players, so that is a property common to all games:
         //prop tab tab:

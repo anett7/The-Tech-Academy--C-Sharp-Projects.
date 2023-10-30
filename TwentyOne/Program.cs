@@ -17,6 +17,7 @@ namespace TwentyOne
             game.Players = new List<string>() { "Jesse", "Bill", "Joe" };
             //call method
             game.ListPlayers();
+            game.Play();
             Console.ReadLine();
         }
 

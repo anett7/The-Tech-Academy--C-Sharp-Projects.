@@ -31,7 +31,7 @@ namespace ClassMethodAssignment
             Console.WriteLine("Input another phrase!");
             string input2 = Console.ReadLine();
             //calling overload method
-            Console.WriteLine(MathDev.StringCounter(string input));
+            Console.WriteLine(MathDev.StringCounter(input2));
 
             //call method of static class
             StaticClass.StaticMethod();

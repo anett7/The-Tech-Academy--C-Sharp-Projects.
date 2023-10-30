@@ -21,18 +21,16 @@ namespace ClassMethodAssignment
             //Call the method on that number and display the output to the screen
             Console.WriteLine(" your number divided by 2 is: " + MathDev.MathDivide(num1));
 
-            //create a method with output parameters
+            // method with output parameters
             Console.WriteLine("Input a phrase!");
             string input= Console.ReadLine();
-            //string phrase = MathDev.StringCounter(input, out int count);
-            //Console.WriteLine(phrase);
+            //calling method:
             Console.WriteLine(MathDev.StringCounter(input, out int count));
 
-            // call overload method
+            // overload method
             Console.WriteLine("Input another phrase!");
             string input2 = Console.ReadLine();
-            //int count = MathDev.StringCounter(string input);
-            //Console.WriteLine(count);
+            //calling overload method
             Console.WriteLine(MathDev.StringCounter(string input));
 
             //call method of static class

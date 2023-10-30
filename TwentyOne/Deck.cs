@@ -8,6 +8,7 @@ namespace TwentyOne
 {
     public class Deck
     {
+        //I. Constructor
         public Deck() 
         {
             Cards = new List<Card>();
@@ -42,6 +43,31 @@ namespace TwentyOne
             }
 
         }
+        //II.Property
         public List<Card> Cards { get; set; }
+
+        //III.Shuffle method ( pasting method from program into this class):
+
+        //static:you can call this method without applying to this specific deck created
+        //delete static so that this method belongs to this object created.
+        //this method takes only one parameter, times.
+        public void Shuffle( int times = 1)
+        {
+
+            for (int i = 0; i < times; i++)
+            {
+                List<Card> TempList = new List<Card>();
+                Random random = new Random();
+                while (Cards.Count > 0)
+                {
+                    int randomIndex = random.Next(0, Cards.Count);
+                    TempList.Add(Cards[randomIndex]);
+                    Cards.RemoveAt(randomIndex);
+                }
+                Cards = TempList;
+            }
+
+           
+        }
     }
 }

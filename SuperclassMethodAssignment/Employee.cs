@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SuperclassMethodAssignment
 {
     //create another class Employee and have it inherit from the Person class
-    //have your Employee class inherit the interface and implement the Quit Method
+    // Polymorphism Assignment:have your Employee class inherit the interface 
     public class Employee : Person, IQuittable
     {
         //give the Employee class a property called ID and have it be of data type int.
@@ -17,9 +17,10 @@ namespace SuperclassMethodAssignment
         {
             Console.WriteLine("Name: " + this.FirstName + " " + this.LastName);
         }
+        // Polymorphism Assignment:implement the Quit Method
         public void Quit(Employee employee) 
         {
-            Console.WriteLine("Names: " + this.FirstName + " " + this.LastName);
+            Console.WriteLine();
         }
     }
 }

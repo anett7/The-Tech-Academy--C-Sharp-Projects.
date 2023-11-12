@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SuperclassMethodAssignment
-{// create an intervace callled IQuittable and have it define a void method called Quit().
+{// Polymorphism Assignment:create an intervace callled IQuittable and have it define a void method called Quit().
     interface IQuittable
     {
         void Quit(Employee employee);

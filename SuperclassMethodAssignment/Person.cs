@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperclassMethodAssignment
 {
-    public class Person
+    public abstract class Person
     {
         //create a class called Person and give it two properties, each of data type string
         //one called FirstName, the other LastName
@@ -15,11 +15,7 @@ namespace SuperclassMethodAssignment
 
         //give the class a void method called SayName() that takes no parameters and simply writes
         //the person's full name to the console in the format of "Name:[full name]"
-        public void SayName()
-        {
+        public abstract void SayName();
 
-            Console.WriteLine("Name: " + this.FirstName + " "+ this.LastName);
-
-        }
     }
 }

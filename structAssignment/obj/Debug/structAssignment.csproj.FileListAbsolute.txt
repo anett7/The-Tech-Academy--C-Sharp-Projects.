@@ -1,0 +1,2 @@
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\structAssignment\obj\Debug\structAssignment.csproj.AssemblyReference.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\structAssignment\obj\Debug\structAssignment.csproj.CoreCompileInputs.cache

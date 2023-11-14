@@ -20,7 +20,7 @@ namespace SuperclassMethodAssignment
         // Polymorphism Assignment:implement the Quit Method
         public void Quit(Employee employee) 
         {
-            Console.WriteLine();
+            Console.WriteLine( "Quitted:" +this.FirstName + " " + this.LastName);
         }
     }
 }

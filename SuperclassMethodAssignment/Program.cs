@@ -19,6 +19,7 @@ namespace SuperclassMethodAssignment
         }
         //Polymorphism assignment: use polymorphism to create an object that is of an interface type, use an object
         //that inherits from that interface 
-        IQuittable quitter = new Employee();
+        IQuittable quitter = new Employee() { FirstName = "Bella", LastName ="Lory"};
+        
     }
 }

@@ -18,7 +18,7 @@ namespace SuperclassMethodAssignment
             Console.WriteLine("Name: " + this.FirstName + " " + this.LastName);
         }
         // Polymorphism Assignment:implement the Quit Method
-        public void Quit(Employee employee) 
+        public void Quit() 
         {
             Console.WriteLine( "Quitted:" +this.FirstName + " " + this.LastName);
         }

@@ -11,12 +11,12 @@ namespace structAssignment
         static void Main(string[] args)
         {
             // in the Main method, create an object of data type Number and assign an amount to it:
-            Number Amount = new Number();
-            Amount = 9.03230923;
+            Number Amount1= new Number();
+            Amount1.Amount = 9.03230923;
 
 
             //print this Amount to the console:
-            Console.WriteLine(Amount);
+            Console.WriteLine(Amount1.Amount);
             Console.ReadLine();
         }
     }

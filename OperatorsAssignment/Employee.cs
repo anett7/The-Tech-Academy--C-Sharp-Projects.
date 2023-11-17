@@ -15,11 +15,11 @@ namespace OperatorsAssignment
         // overload == operator so it checks if two employee objects are equal by comparing their Id property
         //overloaded in pairs
 
-        Public static bool operator ==(Employee emp1, Employee emp2)
+        public static bool operator ==(Employee emp1, Employee emp2)
              {
             return emp1.Id == emp2.Id;
              }
-        Public static bool operator != (Employee emp1, Employee emp2)
+        public static bool operator != (Employee emp1, Employee emp2)
             {
             return emp1.Id != emp2.Id;
             }

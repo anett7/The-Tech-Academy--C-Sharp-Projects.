@@ -12,10 +12,13 @@ namespace OperatorsAssignment
         static void Main(string[] args)
             //createing employee objects
         {
-            Employee emp1 = new Employee() { FirstName = "Lilly", LastName= "Stein"};
-            Employee emp2 = new Employee() { FirstName = "Ben", LastName = "Kiss" };
-           emp1.Id =1;
-           emp2.Id = 2;
+            Employee emp1 = new Employee() { Id=1, FirstName = "Lilly", LastName= "Stein"};
+            Employee emp2 = new Employee() { Id=2, FirstName = "Ben", LastName = "Kiss" };
+
+            Console.WriteLine(emp1 == emp2);
+            Console.WriteLine(emp1 != emp2);
+            Console.ReadLine();
+           
 
 
         }

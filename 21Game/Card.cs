@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21Game
 {
-    internal class Card
+    public class Card
     {
     }
 }

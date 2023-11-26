@@ -1,7 +1,0 @@
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\obj\Debug\Method_Assignment.csproj.AssemblyReference.cache
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\obj\Debug\Method_Assignment.csproj.CoreCompileInputs.cache
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\bin\Debug\Method_Assignment.exe.config
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\bin\Debug\Method_Assignment.exe
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\bin\Debug\Method_Assignment.pdb
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\obj\Debug\Method_Assignment.exe
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Method_Assignment\obj\Debug\Method_Assignment.pdb

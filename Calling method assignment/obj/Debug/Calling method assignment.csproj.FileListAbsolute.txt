@@ -1,7 +1,0 @@
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\bin\Debug\Calling method assignment.exe.config
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\bin\Debug\Calling method assignment.exe
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\bin\Debug\Calling method assignment.pdb
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\obj\Debug\Calling method assignment.csproj.AssemblyReference.cache
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\obj\Debug\Calling method assignment.csproj.CoreCompileInputs.cache
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\obj\Debug\Calling method assignment.exe
-C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\Calling method assignment\obj\Debug\Calling method assignment.pdb

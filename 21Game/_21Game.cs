@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21Game
 {
-    public class _21Game :Game, IWalkAway
+    public class _21Game : Game, IWalkAway
     {
         //dealer is specific to the 21Game, therfore we have this dealer property
         public TwentyOneDealer Dealer { get; set; }
@@ -17,15 +17,15 @@ namespace _21Game
         {
             //when we start game.play in Program class, we already have a game going and we instantiate
             //that dealer object as a new 21 dealer
-            Dealer =new TwentyOneDealer();
-            
+            Dealer = new TwentyOneDealer();
+
             //since we are in a while loop, we are not sure at what stage we are at. We want to reset
             //all the players. game.Play is going to play one hand and the while loop goes through in program class
             //then an other hand, as long as the player says, that he is actively playing and balance is not zero
 
             //Reset the player. When we perform an action on a player, we actually want to do that on all the players
             //as in Game class we have a list of players not just one
-            foreach(Player player in Players)
+            foreach (Player player in Players)
             {
                 //reset player's hand to blank at each round
                 player.Hand = new List<Card>();
@@ -63,29 +63,58 @@ namespace _21Game
                 }
                 //we add player name and the bet to the dictionary
                 Bets[player] = bet;
-        }
+            }
             // next step to deal everyone 2 cards.
             //we loop for the players and give them a card and do that twice. A foreach loop inside of a foor loop. 
-            for (int i=0; i <2; i++)
+            for (int i = 0; i < 2; i++)
             {
                 Console.WriteLine("Dealing..")
                     //we loop through the players
-                    foreach (Player player in Player)
+                foreach (Player player in Players)
                 {
-                    //we write sg.to console, but don't press enter, so next things that comes won't be
-                    //on a new line
+                        //we write sg.to console, but don't press enter, so next things that comes won't be
+                        //on a new line
                     Console.Write({ 0}; "player.Name");
-            //we are passing in the player's hand and its given a card and it is printed to the console
-            //so that you can see. Everyone can see everyone's card. The dealer to follow specific rules.
-            // It is no disadvantage if dealer sees your card in blackjack.
-            Dealer.Deal(player.Hand);
-            //by the second card we need to check for blackjack. ( if you are dealt an ace and a face card
-            //you win 1.5 of your bet immediately. 
+                        //we are passing in the player's hand and its given a card and it is printed to the console
+                        //so that you can see. Everyone can see everyone's card. The dealer to follow specific rules.
+                        // It is no disadvantage if dealer sees your card in blackjack.
+                    Dealer.Deal(player.Hand);
+                        //by the second card we need to check for blackjack. ( if you are dealt an ace and a face card
+                        //you win 1.5 of your bet immediately. 
+                    if (i == 1)
+                    {
+                        //we need to know the value of each cards as well, that will be a whole set of method separate
+                        //we were checking for blackjack
+                        bool blackJack = twentyOneRules.CheckForBlackJack(palyer.Hand);
+                        if (blackJack)
+                        {
+                         Console.WriteLine("Blackjack! { 0} wins { 1}", player.Name, Bets[player]);
+                            //we give him his bet back (cause we took it from him) plus your bet 1.5 times.
+                         player.Balance += Convert.ToInt32((Bets[player] * 1.5) + Bets[player]);
+                            //we end the round here, once someone wins blackjack
+                         return;
+                        }
+
+                    }
+
                 }
-            }
+                Console.Write("Dealer:");
+                Dealer.Deal(Dealer.Hand);
+                if (i == 1)
+                {
+                    bool blackJack = twentyOneRules.CheckForBlackJack(Dealer.Hand);
+                    if(blackjack)
+                    {
+                        Console.WriteLine("Dealer has BlackJack! Everyone loses!");
+                        foreach (KeyValuePair < Player, int> entry in Bets)
+                        {
+                            Dealer.Balance += entry.Value;
+                        }
+                    }
+                 }
         
             
-    }//we need to instantiate our dealer
+    }
 
 
 }

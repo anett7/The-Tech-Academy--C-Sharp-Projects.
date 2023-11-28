@@ -47,8 +47,12 @@ namespace _21Game
         //take the very first entry in our int.array and assign value to it
             result[0]=value;
             //no aces, then hand can only have one value, quick check:
-            if (result.Length ==1 )return result;
-        }
+            if (result.Length == 1 )return result;
+            for (int i =1; i< result.Length; i++)
+            {
+            value= value +(i*10);
+            result[i]=value
+               }
 
         //does this contain an ace and a face card?
         public static bool CheckForBlackJack(List<Card> Hand)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _21Game;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -97,24 +98,122 @@ namespace _21Game
 
                     }
 
-                }
+                }//we want to keep it on the same line ( Console.Write only)
                 Console.Write("Dealer:");
                 Dealer.Deal(Dealer.Hand);
                 if (i == 1)
                 {
+
                     bool blackJack = twentyOneRules.CheckForBlackJack(Dealer.Hand);
                     if(blackjack)
                     {
                         Console.WriteLine("Dealer has BlackJack! Everyone loses!");
+            //give dealer all those bets, we iterate thr0ugh dictionary and we assign the balance of everyone
                         foreach (KeyValuePair < Player, int> entry in Bets)
                         {
                             Dealer.Balance += entry.Value;
                         }
                     }
                  }
+            }
+            foreach (Player player in Players)
+                {
+                    while (!player.Stay)
+                    {//show player their card
+                     Console.WriteLine("Your cards are: ");
+                        foreach (Card card in Player.Hand)
+                            {
+                             Console.Write("{0} ", card.ToString());
+                            }
+                            Console.WriteLine("\n\n Hit or stay?");
+                            string answer = Console.ReadLine().ToLower();
+                            if(answer == "stay") 
+                                {
+                                player.Stay = true;
+                                 break;
+                                }
+                            else if(answer == "hit") 
+                                {
+                                Dealer.Deal(player.Hand);
+                                }
+                             bool busted = twentyOneRules.isBusted(player.Hand);
+                            if (busted)
+                            {//dealer gets all the bets of the player/s
+                                Dealer.Balance += Bets[player];
+                                Console.WriteLine("{0} Busted! You lose your/ bet of{1}, Your balance is now{2}", player.Name, Bets[player]player.Balance);
+                                Console.WriteLine("Do you want to play again");
+                                answer= Console.ReadLine().ToLower();
+                                if (answer == "yes" || answer == "yeah")
+                                {
+                                    player.isActivelyPlaying = true;
+                                }
+                                else
+                                {
+                                    player.isActivelyPlaying= false;
+                                }
+                            }
+
+                         }
+                    }
+Dealer.isBusted = twentyOneRules.isBusted(Dealer.Hand);
+Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
+while(!Dealer.Stay && !Dealer.isBusted)
+{
+    Console.WriteLine("Dealer is hitting...");
+    Dealer.Deal(Dealer.Hand);
+    Dealer.isBusted = twentyOneRules.isBusted(Dealer.Hand);
+    Dealer.Stay = twentyOneRules.ShouldDealerStay(Dealer.Hand);
+}
+if (Dealer.Stay)
+{
+    Console.WriteLine("Dealer is staying.");
+}
+if (Dealer.isBusted)
+{
+    Console.WriteLine("Dealer busted!");
+    foreach (KeyValuePair < Player, int> entry in Bets)
+    {
+        Console.WriteLine("{0} won {1}!", entry.Key.Name, entry.Value);
+        Players.Where(x => x.Name == entry.Key.Name).First().Balance += (entry.Value * 2);
+        Dealer.Balance -= entry.Value;
+    }
+    return;
+}
+foreach (Player player in Players)
+{
+    bool? playerWon = twentyOneRules.CompareHand(player.Hand, Delaer.Hand);
+    if (playerWon == null)
+    {
+        Console.WriteLine("Push! No one wins.");
+        player.Balance += Bets[player];
+    }
+    else if (playerWon== true)
+    {
+        Console.WriteLine("{0} won{1}!", player.Name, Bets[player]);
+        player.Balance += Bets[player] *2);
+        Dealer.Balance -= Bets[player];
+    }
+    else
+    {
+        Console.WriteLine("Dealer wins{0}!", Bets[player]);
+        Dealer.Balance += Bets[player];
+    }
+    ConsoleWriteLine("Play again?");
+    string answer = Console.ReadLine().ToLower();
+    if (answer== "yes"|| answer == "yeah")
+    {
+        player.isActivelyPlaying = true;
+    }
+    else
+    {
+        player.isActivelyPlaying = false;   
+    }
+}
+
+
         
             
-    }
+    
 
 
 }

@@ -34,6 +34,7 @@ namespace _21Game
             [Face.Ace] = 1
 
         };
+        private static int[] GetAllPossibleHandValues(List<Card>Hand)
 
         //get all possible hand values, it returns integerarray of the possible values
         {
@@ -48,16 +49,46 @@ namespace _21Game
             result[0]=value;
             //no aces, then hand can only have one value, quick check:
             if (result.Length == 1 )return result;
+            //first value ace equals 1, for each ace we make a separate value and add 10 to it. 
+            //value plus one times 10. If there is an other ace there it would be 2 *20 adding to it.
             for (int i =1; i< result.Length; i++)
-            {
-            value= value +(i*10);
-            result[i]=value
-               }
+                {
+                    value= value +(i*10);
+                // value += (i*10); is the shorthand version
+                result[i] = value;
+                }
+                 return result;
+        }
 
         //does this contain an ace and a face card?
         public static bool CheckForBlackJack(List<Card> Hand)
         {
-
+            //create an integers of possible values
+            int[] possibleValues = GetAllPossibleHandValues(Hand);
+            //we only check blackjack after 2 cards
+            int value = possibleValues.Max();
+            // if that max possibleValue is 21, then that guy has blackjack, so returns true.
+            if (value == 21) return true;
+            else return false;
+        }
+        public static bool isBusted(List<Card> Hand)
+        {
+            int value=GetAllPossibleHandValues(Hand).Min();
+            if (value > 21) return true; 
+            else return false;
+        }
+        //there are set rules for the dealer when he can stay etc.
+        public static bool ShouldDealerStay(List<Card> Hand) 
+        {
+            int[] possibleHandValues = GetAllPossibleHandValues(Hand);
+            foreach (int value in possibleHandValues)
+            {
+                if ( value> 16 && value<22)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

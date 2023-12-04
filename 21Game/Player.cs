@@ -26,6 +26,24 @@ namespace _21Game
         //this is a property very specific to 21Game, better to create a 21Player class that inherit from Player class
         //we keep this inside of Player class for now:
         public bool Stay { get; set; }
+
+        //bet method
+        public bool Bet(int amount)
+        {
+            if (Balance-amount > 0) 
+            {
+                Console.WriteLine("You do not have enough to place a bet that size.");
+                //bet did not work, it failed:
+                return false;
+            }
+            else
+            {
+                //Balance = Balance-amount; shorthand:
+                Balance -= amount;
+                return true;
+            }
+            
+        }
         public static Game operator +(Game game, Player player)
         {
             game.Players.Add(player);

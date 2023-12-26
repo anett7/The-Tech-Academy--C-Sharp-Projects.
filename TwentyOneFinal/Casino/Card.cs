@@ -1,31 +1,24 @@
-﻿using Microsoft.SqlServer.Server;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _21Game
+﻿namespace Casino
 {
-    public struct Card
+    public class Card
     {
         public Suit Suit { get; set; }
-        public Face Face {get; set;}
-            
-        //every object, every class has a built in method as part of the .Net framework (ToString method)
+        public Face Face { get; set; }
+
         public override string ToString()
         {
             return string.Format("{0} of {1}", Face, Suit);
         }
-
     }
+
     public enum Suit
     {
         Clubs,
-        Diamond,
+        Diamonds,
         Hearts,
         Spades
     }
+
     public enum Face
     {
         Two,
@@ -37,9 +30,9 @@ namespace _21Game
         Eight,
         Nine,
         Ten,
-        Ace,
         Jack,
+        Queen,
         King,
-        Queen
+        Ace
     }
 }

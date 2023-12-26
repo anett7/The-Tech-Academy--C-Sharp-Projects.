@@ -37,6 +37,7 @@ namespace _21Game
             Dealer.Stay = false;
             //create a new deck, we dont want a partial deck to carry over
             Dealer.Deck = new Deck();
+            Dealer.Deck.Shuffle();
 
             //we called the play method, we created a new dealer, we looped through the players we reset them
             //we reset them with an empty hand and reset their stay to false. Same with the dealer. 
@@ -75,7 +76,7 @@ namespace _21Game
                 {
                         //we write sg.to console, but don't press enter, so next things that comes won't be
                         //on a new line
-                    Console.Write({ 0}; "player.Name");
+                    Console.Write("{0}: ", player.Name);
                         //we are passing in the player's hand and its given a card and it is printed to the console
                         //so that you can see. Everyone can see everyone's card. The dealer to follow specific rules.
                         // It is no disadvantage if dealer sees your card in blackjack.
@@ -113,15 +114,16 @@ namespace _21Game
                         {
                             Dealer.Balance += entry.Value;
                         }
+                        return;
                     }
-                 }
+                }
             }
             foreach (Player player in Players)
                 {
                     while (!player.Stay)
                     {//show player their card
                      Console.WriteLine("Your cards are: ");
-                        foreach (Card card in Player.Hand)
+                        foreach (Card card in player.Hand)
                             {
                              Console.Write("{0} ", card.ToString());
                             }
@@ -132,31 +134,34 @@ namespace _21Game
                                 player.Stay = true;
                                  break;
                                 }
-                            else if(answer == "hit") 
+                                else if(answer == "hit") 
                                 {
-                                Dealer.Deal(player.Hand);
+                                     Dealer.Deal(player.Hand);
                                 }
                              bool busted = twentyOneRules.isBusted(player.Hand);
                             if (busted)
-                            {//dealer gets all the bets of the player/s
+                            {
+                                    //dealer gets all the bets of the player/s
                                 Dealer.Balance += Bets[player];
-                                Console.WriteLine("{0} Busted! You lose your/ bet of{1}, Your balance is now{2}", player.Name, Bets[player]player.Balance);
+                                Console.WriteLine("{0} Busted! You lose your bet of{1}, Your balance is now{2}", player.Name, Bets[player],player.Balance);
                                 Console.WriteLine("Do you want to play again");
                                 answer= Console.ReadLine().ToLower();
                                 if (answer == "yes" || answer == "yeah")
                                 {
                                     player.isActivelyPlaying = true;
+                                     return;
                                 }
                                 else
                                 {
                                     player.isActivelyPlaying= false;
+                                    return;
                                 }
                             }
 
                          }
                     }
-Dealer.isBusted = twentyOneRules.isBusted(Dealer.Hand);
-Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
+Dealer.isBusted = twentyOneRules.IsBusted(Dealer.Hand);
+Dealer.Stay = twentyOneRules.ShouldDealerStay(Dealer.Hand);
 while(!Dealer.Stay && !Dealer.isBusted)
 {
     Console.WriteLine("Dealer is hitting...");

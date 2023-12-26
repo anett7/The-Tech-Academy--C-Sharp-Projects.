@@ -1,0 +1,8 @@
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\bin\Debug\netcoreapp3.1\Casino.deps.json
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\bin\Debug\netcoreapp3.1\Casino.dll
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\bin\Debug\netcoreapp3.1\Casino.pdb
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.AssemblyInfoInputs.cache
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.AssemblyInfo.cs
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.csproj.CoreCompileInputs.cache
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.dll
+H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.pdb

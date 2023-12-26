@@ -40,11 +40,12 @@ namespace TwentyOne
             }
             Console.WriteLine("Hello, {0}! Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
+            
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
                 Player player = new Player(playerName, bank);
                 player.Id = Guid.NewGuid();
-                using (StreamWriter file = new StreamWriter(@"H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\TwentyOne\logs\playerIds.txt", true))
+                using (StreamWriter file = new StreamWriter(@"C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\TwentyOne\logs\playerIds.txt", true))
                 {
                     file.WriteLine(player.Id);
                 }

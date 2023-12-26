@@ -97,6 +97,7 @@ namespace TwentyOne
                 command.Parameters["@ExceptionMessage"].Value = ex.Message;
                 command.Parameters["@TimeStamp"].Value = DateTime.Now;
 
+                
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();

@@ -6,3 +6,13 @@ H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj
 H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.csproj.CoreCompileInputs.cache
 H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.dll
 H:\School\The-Tech-Academy-C-Sharp-Course\Basic_C#_Programs\TwentyOne\Casino\obj\Debug\netcoreapp3.1\Casino.pdb
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\bin\Debug\netcoreapp3.1\Casino.deps.json
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\bin\Debug\netcoreapp3.1\Casino.dll
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\bin\Debug\netcoreapp3.1\Casino.pdb
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.csproj.AssemblyReference.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.AssemblyInfoInputs.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.AssemblyInfo.cs
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.csproj.CoreCompileInputs.cache
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.dll
+C:\Users\user29834\Desktop\Tech_Academy_basic_C#Projects\The-Tech-Academy-Basic-C-Sharp-Projects\TwentyOneFinal\Casino\obj\Debug\netcoreapp3.1\Casino.pdb

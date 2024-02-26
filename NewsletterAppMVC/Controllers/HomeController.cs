@@ -17,6 +17,13 @@ namespace NewsletterAppMVC.Controllers
         public ActionResult SignUp(string firstName, string lastName, string emailAddress)
 
         {
+            
+            
+            
+            
+            
+            
+            
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress)) 
             {
                 return View("~/Views/Shared/Error.cshtml");
@@ -24,7 +31,7 @@ namespace NewsletterAppMVC.Controllers
             else
             {
                 string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Newsletter;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-                string queryString = @"INSERT INTO dbo.Table (FirstName, LastName, EmailAddress) VALUES (@FirstName, @LastName, @EmailAddress)";
+                string queryString = @"INSERT INTO dbo.SignUps(FirstName, LastName, EmailAddress) VALUES (@FirstName, @LastName, @EmailAddress)";
                 using(SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlCommand command = new SqlCommand(queryString, connection);
@@ -37,9 +44,10 @@ namespace NewsletterAppMVC.Controllers
                     command.Parameters["@EmailAddress"].Value = emailAddress;
 
                     connection.Open();
+                    
                     command.ExecuteNonQuery();
                     connection.Close();
-                                    }
+                }
                 return View("Success");
             }
         }
@@ -49,6 +57,9 @@ namespace NewsletterAppMVC.Controllers
 
             return View();
         }
+
+
+
 
         public ActionResult Contact()
         {

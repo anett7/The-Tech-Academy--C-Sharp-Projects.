@@ -11,7 +11,6 @@ namespace NewsletterAppMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Newsletter;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public int FirstName { get; private set; }
 
@@ -64,52 +63,5 @@ namespace NewsletterAppMVC.Controllers
             }
         }
         
-        public ActionResult Admin()
-        {
-            using (NewsletterEntities db = new NewsletterEntities())
-            {
-                var Signups = db.SignUps;
-                var signupVms = new List<SignupVm>();
-                foreach (var signup in Signups)
-                {
-                    var signupVm = new SignupVm();
-                    signupVm.FirstName = signup.FirstName;
-                    signupVm.LastName = signup.LastName;
-                    signupVm.EmailAddress = signup.EmailAddress;
-                    signupVms.Add(signupVm);
-                }
-                return View(signupVms);
-            }
-            ////with ADO.Net
-            //string queryString= @"SELECT Id, FirstName, LastName, EmailAddress, SocialSecurityNumber from Signups";
-            List<NewsletterSignUp> signups = new List<NewsletterSignUp>();
-
-            //using(SqlConnection connection = new SqlConnection(connectionString))
-            //{
-            //    SqlCommand command= new SqlCommand(queryString, connection);
-            //    connection.Open();
-            //    SqlDataReader reader = command.ExecuteReader();
-            //    while (reader.Read())
-            //{
-            //    var signup = new NewsletterSignUp();
-            //    signup.Id = Convert.ToInt32(reader["Id"]);
-            //    signup.FirstName = reader["FirstName"].ToString();
-            //    signup.LastName = reader["LastName"].ToString();
-            //    signup.EmailAddress = reader["EmailAddress"].ToString();
-            //    signup.SocialSecurityNumber = reader["SocialSecurityNumber"].ToString();
-            //    signups.Add(signup);
-            //}
-            //}
-            //var signupVms = new List<SignupVm>();
-            //foreach (var signup in signups)
-            //{
-            //    var signupVm = new SignupVm();
-            //    signupVm.FirstName = signup.FirstName;
-            //    signupVm.LastName = signup.LastName;
-            //    signupVm.EmailAddress = signup.EmailAddress;
-            //    signupVms.Add(signupVm);
-            //}
-            //return View(signupVms);
-        }
     }
 }

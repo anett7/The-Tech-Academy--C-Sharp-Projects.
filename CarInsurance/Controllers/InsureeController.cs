@@ -7,11 +7,14 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarInsurance.Models;
+using Microsoft.Ajax.Utilities;
 
 namespace CarInsurance.Controllers
 {
     public class InsureeController : Controller
     {
+
+
         private InsuranceEntities db = new InsuranceEntities();
 
         // GET: Insuree
@@ -113,6 +116,65 @@ namespace CarInsurance.Controllers
             db.Tables.Remove(table);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        //contoller actions (calculate a quote based on guidelines)
+        [HttpPost]
+        public ActionResult CalculateQuote(Table table)
+        {
+                decimal basePrice = 50;
+                decimal Quote = basePrice;
+
+
+
+            // age calculation
+            // save today's date
+            var today = DateTime.Today;
+            //calculate age
+            var Age = today.Year - table.DateOfBirth.Year;
+
+            if (Age <= 18)
+                {
+                Quote += 100;
+                }
+            else if(Age>=19 && Age <=25)
+                {
+                Quote += 50;
+                }
+
+            else
+                {
+                    Quote += 25;
+                }
+
+                //car year calculation
+                if(table.CarYear < 2000)
+                    {
+                    Quote += 25;
+                    }
+                //car make and model calculation
+                if (table.CarMake == "Porsche")
+                    {
+                        Quote += 25;
+                        if (table.CarModel == "911 Carrera") 
+                            {
+                                Quote += 25;
+                            }
+                    }
+            //speeding ticket calculation
+            Quote += 10 * table.SpeedingTickets;
+            //DUI calculation
+            if (table.DUI== true)
+            {
+                Quote *= 1.25m; //25% increase
+            }
+
+            //full coverage calculation
+            if (table.CoverageType == true)
+            {
+                Quote *= 1.5m; // 50% increase
+            }
+            return View();
         }
 
         protected override void Dispose(bool disposing)

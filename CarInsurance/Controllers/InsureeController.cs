@@ -20,6 +20,9 @@ namespace CarInsurance.Controllers
         // GET: Insuree
         public ActionResult Index()
         {
+            
+            
+            
             return View(db.Tables.ToList());
         }
 
@@ -53,6 +56,7 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                CalculateQuote(table);
                 db.Tables.Add(table);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -174,7 +178,9 @@ namespace CarInsurance.Controllers
             {
                 Quote *= 1.5m; // 50% increase
             }
+            table.Quote = Quote;
             return View();
+            
         }
 
         protected override void Dispose(bool disposing)

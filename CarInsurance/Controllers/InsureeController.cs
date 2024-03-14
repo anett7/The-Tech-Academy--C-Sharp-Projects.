@@ -182,6 +182,12 @@ namespace CarInsurance.Controllers
             return View();
             
         }
+        //Admin view
+        public ActionResult Admin()
+        {
+
+            return View(db.Tables.ToList());//send the list of database entries to the Admin view
+        }
 
         protected override void Dispose(bool disposing)
         {

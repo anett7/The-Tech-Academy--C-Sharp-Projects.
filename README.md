@@ -12,4 +12,6 @@ Iteration
 Debugging and exception handling in C#
 Methods, calling methods, main methods, how and when to use class methods
 
+Car Insurance:
+This project is an MVC web application that mimics a car insurance website. It takes user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued. 
 

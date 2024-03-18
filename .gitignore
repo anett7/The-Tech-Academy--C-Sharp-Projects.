@@ -32,3 +32,4 @@ CarInsurance/App_Data/Insurance.mdf
 CarInsurance/App_Data/Insurance_log.ldf
 CarInsurance/App_Data/Insurance.mdf
 CarInsurance/App_Data/Insurance_log.ldf
+*.vsidx

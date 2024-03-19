@@ -19,9 +19,13 @@ CodeFirst:
 basic Entity Framework Code-First Console application that creates a basic Student database and adds one Student.
 
 Twentyone Game:
-Creating a game with C# and more intermediate programming:
+Creating a fully functional game of blackjack with C# :
 •  Using lambda expressions in C#
 •  Creating intermediate C# programs
-•  Utilizing file I/O in C#
 •  Using DateTime in C#
 
+
+Student MVC: a basic MVC application
+MVC has defined default routes. Every Controller has a default route of Index, meaning if no method is specified after the controller name in the URL, it will default to Index.Furthermore, the root URL of the entire site has a default route of /Home/Index.
+
+Newsletter App: is a fully functional MVC application, a signup to a newsletter form. Also have created an admin page, that will display all the signups to the user. 

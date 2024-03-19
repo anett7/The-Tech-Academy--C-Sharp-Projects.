@@ -18,3 +18,10 @@ This project is an MVC web application that mimics a car insurance website. It t
 CodeFirst:
 basic Entity Framework Code-First Console application that creates a basic Student database and adds one Student.
 
+Twentyone Game:
+Creating a game with C# and more intermediate programming:
+•  Using lambda expressions in C#
+•  Creating intermediate C# programs
+•  Utilizing file I/O in C#
+•  Using DateTime in C#
+

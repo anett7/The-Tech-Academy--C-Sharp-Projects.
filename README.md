@@ -1,4 +1,4 @@
-# The-Tech-Academy-C-Sharp course was a year long course, where Part1 was about:
+# The-Tech-Academy-C-Sharp course was a year long course, with about 200 study hours:
 •	how to assign variables in C#
 • how	to execute data types in C#
 •	how to perform math operations in C#

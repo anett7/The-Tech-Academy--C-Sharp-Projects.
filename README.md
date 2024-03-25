@@ -1,4 +1,4 @@
-# The-Tech-Academy-Basic-C-Sharp-Projects where I have learnt about:
+# The-Tech-Academy-C-Sharp course was a year long course, where Part1 was about:
 •	how to assign variables in C#
 • how	to execute data types in C#
 •	how to perform math operations in C#
@@ -10,7 +10,11 @@
 •	Iteration
 •	Debugging and exception handling in C#
 •	Methods, calling methods, main methods, and to use class methods
+•	core principles of the Model-View-Controller (MVC) framework
+•	how a database works within the MVC framework
+•how the Entity Framework is used within the MVC framework
 
+I have completed following projects: 
 Car Insurance:
 This project is an MVC web application that mimics a car insurance website. It takes user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued. 
 
